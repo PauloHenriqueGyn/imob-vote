@@ -1,0 +1,21 @@
+<div class="container-fluid p-0">
+  <div class="container">
+
+    <div class="content">
+      <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div fxFlex="25%" *ngFor="let empreendimento of empreendimentos">
+          <mat-card class="mat-elevation-z4" >
+            <mat-card-header>
+              <mat-card-title>{{empreendimento.descricao}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image [src]="castingImage(empreendimento.foto)">
+            <mat-card-actions>
+              <button mat-button (click)="sim(empreendimento.id)">Sim</button>
+              <button mat-button (click)="nao(empreendimento.id)">Não</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>

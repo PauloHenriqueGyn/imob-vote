@@ -1,0 +1,15 @@
+.mat-sidenav-container, .mat-sidenav-content, .mat-tab-body-content {
+  transform: none !important;
+}
+
+mat-toolbar {
+  justify-content: space-between;
+}
+
+.content {
+  padding: 16px;
+}
+
+.content > mat-card {
+  margin-bottom: 16px;
+}
